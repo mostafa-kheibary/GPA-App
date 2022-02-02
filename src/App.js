@@ -1,23 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
-
+import { useState } from 'react';
+import AddLesson from './components/AddLesson/AddLesson';
+import AllLesson from './components/AllLesson/AllLesson';
 function App() {
+  const [lesson,setLesson] = useState([
+    {name:'Math',mark:18,isPassd:true,ratio:4},
+    {name:'cs',mark:14,isPassd:true,ratio:1},
+    {name:'sience',mark:9,isPassd:false,ratio:2},
+  ])
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='container'>
+      <AddLesson />
+      <AllLesson all={lesson}/>
     </div>
   );
 }

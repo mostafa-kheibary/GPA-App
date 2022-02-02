@@ -1,0 +1,24 @@
+.all-lesson {
+  margin-top: 25px;
+}
+.all-lesson__head {
+  display: flex;
+  gap: 10px;
+}
+.all-lesson__icon {
+  width: 20px;
+}
+.all-lesson__title {
+  font-size: 15px;
+  font-weight: 300;
+}
+.all-lesson__container {
+  overflow-y:scroll ;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  margin-top: 25px;
+  padding: 25px;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.164);
+}

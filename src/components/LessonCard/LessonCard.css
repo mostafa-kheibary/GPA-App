@@ -1,0 +1,39 @@
+.card {
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.158);
+  padding: 15px;
+}
+.card__ratio{
+  display: flex;
+  justify-content: center;
+  place-items: center;
+  width: 25px;
+  height: 25px;
+  background-color: black;
+  color: white;
+  border-radius: 50%;
+}
+.card__split {
+  display: flex;
+  place-items: center;
+  gap: 10px;
+}
+.card__name{
+  font-weight: 300;
+  font-size: 20px;
+}
+.card__mark{
+  margin-left: -5px;
+  font-size: 15px;
+  font-weight: 300;
+}
+.card__delete{
+  padding: 5px;
+  cursor: pointer;
+}
+.card__icon{
+  width: 20px;
+  height: 20px;
+}
