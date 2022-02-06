@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import './Result.css';
 function Result({ result, all }) {
-  const [gradeScheme, setGradeScheme] = useState('?');
+  const [gradeScheme, setGradeScheme] = useState('');
   useEffect(() => {
     if (result.avrage >= 90 && result.avrage <= 100) {
       setGradeScheme('A+');
@@ -15,10 +15,10 @@ function Result({ result, all }) {
       setGradeScheme('B');
     } else if (result.avrage >= 65 && result.avrage <= 69) {
       setGradeScheme('C+');
-    } else if ((result.avrage = 64)) {
+    } else if ((result.avrage <= 64)) {
       setGradeScheme('FAIL');
     } else {
-      setGradeScheme('?');
+      setGradeScheme('');
     }
   }, [result]);
   return (

@@ -16,3 +16,12 @@
   gap: 50px;
   margin-top: 25px;
 }
+@media screen and (max-width:960px){
+  .result-section{
+    flex-direction: column;
+  }
+  .all-lesson,.result{
+    width: 100%;
+  }
+  
+}

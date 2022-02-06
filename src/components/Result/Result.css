@@ -44,8 +44,18 @@
   place-items: center;
   justify-content: start;
   gap: 10px;
+  width: 100%;
+  overflow-wrap: break-word;
 }
 .status__title{
   font-weight: 300;
+  width: 100%;
+  overflow-wrap: break-word;
   font-size: 14px;
+}
+.status__fail span{
+  overflow-wrap: break-word;
+}
+.status__pass span{
+  overflow-wrap: break-word;
 }

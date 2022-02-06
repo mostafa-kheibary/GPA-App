@@ -23,6 +23,7 @@
 .card__name {
   font-weight: 300;
   font-size: 20px;
+  overflow-wrap: break-word;
 }
 .card__mark {
   margin-left: -5px;
