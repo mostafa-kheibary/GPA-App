@@ -10,13 +10,13 @@
 Clone the project
 
 ```bash
-  git clone https://link-to-project
+  git clone https://github.com/mostafa-kheibary/GPA-App.git
 ```
 
 Go to the project directory
 
 ```bash
-  cd my-project
+  cd GPA-App
 ```
 
 Install dependencies
