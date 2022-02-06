@@ -5,6 +5,11 @@
   display: flex;
   gap: 10px;
 }
+.title-help{
+  text-align: left;
+  margin-left: 10px;
+  font-weight: 300;
+}
 .title-box__title {
   font-weight: 500;
 }

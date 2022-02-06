@@ -38,6 +38,7 @@ function AddLesson({ addLesson }) {
         <img src='../../svg/add.svg' alt='' />
         <h2 className='title-box__title'>Add New Lesson</h2>
       </div>
+      <p className='title-help'>based on 100 mark</p>
       <div className='input-group'>
         <input
           value={lesson.unit}
