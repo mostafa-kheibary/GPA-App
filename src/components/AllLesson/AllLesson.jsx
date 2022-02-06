@@ -1,6 +1,6 @@
 import './AllLesson.css';
 import LessonCard from '../LessonCard/LessonCard';
-function AllLesson({ all }) {
+function AllLesson({ all, handleDelete }) {
   return (
     <div className='all-lesson'>
       <div className='all-lesson__head'>
@@ -13,8 +13,19 @@ function AllLesson({ all }) {
       </div>
       <div className='all-lesson__container'>
         {all.map((lesson) => (
-          <LessonCard key={lesson.name} />
+          <LessonCard
+            handleDelete={handleDelete}
+            key={lesson.id}
+            id={lesson.id}
+            name={lesson.name}
+            mark={lesson.mark}
+            isPass={lesson.isPass}
+            ratio={lesson.ratio}
+          />
         ))}
+        <h4 className='nothing'>
+          {all.length === 0 && 'You dont have any lesson yet'}
+        </h4>
       </div>
     </div>
   );

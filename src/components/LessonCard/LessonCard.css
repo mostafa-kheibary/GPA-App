@@ -3,9 +3,9 @@
   display: flex;
   justify-content: space-between;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.158);
-  padding: 15px;
+  padding: 10px;
 }
-.card__ratio{
+.card__ratio {
   display: flex;
   justify-content: center;
   place-items: center;
@@ -20,20 +20,26 @@
   place-items: center;
   gap: 10px;
 }
-.card__name{
+.card__name {
   font-weight: 300;
   font-size: 20px;
 }
-.card__mark{
+.card__mark {
   margin-left: -5px;
   font-size: 15px;
   font-weight: 300;
 }
-.card__delete{
+.card__delete {
   padding: 5px;
   cursor: pointer;
 }
-.card__icon{
+.card__icon {
   width: 20px;
   height: 20px;
+}
+.pass {
+  color: #138800;
+}
+.fail {
+  color: #ff4343;
 }

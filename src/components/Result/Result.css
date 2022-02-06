@@ -1,0 +1,51 @@
+.result {
+  width: 30%;
+}
+.result__head {
+  display: flex;
+  gap: 10px;
+}
+.result__title {
+  font-size: 15px;
+  font-weight: 300;
+}
+.result__icon {
+  width: 18px;
+}
+.result__container {
+  margin-top: 25px;
+}
+.result__mark-sign {
+  font-size: 64px;
+  text-align: center;
+  font-weight: 500;
+}
+.result__mark {
+  font-size: 15px;
+  font-weight: 300;
+}
+.large {
+  font-size: 50px;
+}
+.result__info {
+  font-size: 14px;
+  font-weight: 300;
+  margin-top: -10px;
+}
+.status {
+  margin-top: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.status__pass,
+.status__fail {
+  display: flex;
+  place-items: center;
+  justify-content: start;
+  gap: 10px;
+}
+.status__title{
+  font-weight: 300;
+  font-size: 14px;
+}

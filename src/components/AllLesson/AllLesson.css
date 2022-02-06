@@ -1,5 +1,5 @@
 .all-lesson {
-  margin-top: 25px;
+  width: 70%;
 }
 .all-lesson__head {
   display: flex;
@@ -21,4 +21,18 @@
   margin-top: 25px;
   padding: 25px;
   box-shadow: 0 0 25px rgba(0, 0, 0, 0.164);
+  height: 400px;
+}
+.all-lesson__container::-webkit-scrollbar{
+  width: 15px;
+  padding: 10px;
+}
+.all-lesson__container::-webkit-scrollbar-thumb{
+  background-color: rgb(214, 214, 214);
+  border-radius: 500px;
+  background-clip: padding-box;
+  border: 5px white solid;
+}
+.nothing{
+  font-weight: 300;
 }
