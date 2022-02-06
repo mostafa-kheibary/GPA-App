@@ -1,9 +1,9 @@
 import './LessonCard.css';
-function LessonCard({ name, mark, isPass, ratio,handleDelete ,id}) {
+function LessonCard({ name, mark, isPass, unit,handleDelete ,id}) {
   return (
     <div className='card'>
       <div className='card__split'>
-        <h5 className='card__ratio'>{ratio}</h5>
+        <h5 className='card__unit'>{unit}</h5>
         <h3 className={`card__name ${isPass ? 'pass' : 'fail'}`}>{name}</h3>
         <span className='card__mark'>({mark})</span>
       </div>

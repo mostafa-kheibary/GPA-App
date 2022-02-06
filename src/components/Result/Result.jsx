@@ -3,7 +3,7 @@ function Result({ result,all}) {
   return (
     <div className='result'>
       <div className='result__head'>
-        <img className='result__icon' src='../../svg/result.svg' />
+        <img className='result__icon' src='../../svg/result.svg' alt=''/>
         <h2 className='result__title'>Your Reslut</h2>
       </div>
       <div className='result__container'>
@@ -11,7 +11,7 @@ function Result({ result,all}) {
         <h5 className='result__mark'>
           Yoy Get: <span className='large'>{result.avrage === 'NaN' ? 0:result.avrage}</span>
         </h5>
-        <p className='result__info'>{all.length} lesosn and {result.ratio} ratio</p>
+        <p className='result__info'>{all.length} lesosn and {result.unit} unit</p>
         <div className='status'>
           <div className='status__pass'>
             <img src='../../svg/pass.svg' alt='' />

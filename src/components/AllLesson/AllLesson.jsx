@@ -20,7 +20,7 @@ function AllLesson({ all, handleDelete }) {
             name={lesson.name}
             mark={lesson.mark}
             isPass={lesson.isPass}
-            ratio={lesson.ratio}
+            ratio={lesson.unit}
           />
         ))}
         <h4 className='nothing'>

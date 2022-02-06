@@ -1,16 +1,16 @@
 import { v4 as uuid } from 'uuid';
 import './AddLesson.css';
 import { useState } from 'react';
-function AddLesson({ all, addLesson }) {
+function AddLesson({ addLesson }) {
   const [lesson, setLesson] = useState({
     mark: '',
-    ratio: '',
+    unit: '',
     name: '',
     id: uuid(),
   });
 
-  const handleRatio = (e) => {
-    setLesson({ ...lesson, ratio: e.target.value });
+  const handleUnit = (e) => {
+    setLesson({ ...lesson, unit: e.target.value });
   };
   const handleName = (e) => {
     setLesson({ ...lesson, name: e.target.value });
@@ -19,11 +19,17 @@ function AddLesson({ all, addLesson }) {
     setLesson({ ...lesson, mark: e.target.value });
   };
   const handleSubmit = () => {
-    lesson.id =uuid();
-    lesson.mark = +lesson.mark;
-    lesson.ratio = +lesson.ratio;
-    setLesson({ mark: '', ratio: '', name: '' });
-    addLesson(lesson);
+    if (
+      lesson.name.trim() !== '' &&
+      lesson.mark.trim() !== '' &&
+      lesson.unit.trim() !== ''
+    ) {
+      lesson.id = uuid();
+      lesson.mark = +lesson.mark;
+      lesson.unit = +lesson.unit;
+      setLesson({ mark: '', unit: '', name: '' });
+      addLesson(lesson);
+    }
   };
 
   return (
@@ -34,9 +40,9 @@ function AddLesson({ all, addLesson }) {
       </div>
       <div className='input-group'>
         <input
-          value={lesson.ratio}
-          onChange={handleRatio}
-          placeholder='ratio'
+          value={lesson.unit}
+          onChange={handleUnit}
+          placeholder='unit'
           type='number'
           className='input input-ratio'
         />
