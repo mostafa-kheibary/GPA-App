@@ -13,7 +13,7 @@ function App() {
   });
 
   const addLesson = (lesson) => {
-    setLesson([...lessons, { ...lesson, isPass: lesson.mark >= 10 }]);
+    setLesson([...lessons, { ...lesson, isPass: lesson.mark >= 64 }]);
   };
   const deleteLesson = (id) => {
     const newLesson = [...lessons].filter((lesson)=>lesson.id !== id);

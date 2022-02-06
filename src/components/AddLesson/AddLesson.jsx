@@ -44,7 +44,7 @@ function AddLesson({ addLesson }) {
           onChange={handleUnit}
           placeholder='unit'
           type='number'
-          className='input input-ratio'
+          className='input input-unit'
         />
         <input
           value={lesson.name}
@@ -57,7 +57,7 @@ function AddLesson({ addLesson }) {
           value={lesson.mark}
           onChange={handleMark}
           placeholder='Mark'
-          type='text'
+          type='number'
           className='input input-mark'
         />
       </div>
